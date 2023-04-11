@@ -1,0 +1,28 @@
+/*Shows full user about me.*/
+[class|=userPopoutInner] [style*="-webkit-line-clamp"] {
+    -webkit-line-clamp: unset !important;
+}
+
+/*Replaces new user leaf with funny lil guy*/
+[class*=newMemberBadge]:before {
+    content: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=64&quality=lossless);
+    transform: scale(0.32) translate(-100%, -110%);
+    display: inline-block;
+}
+
+/* remove login artwork */
+svg.artwork-L5TAwQ {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/*Remove Invite Button next to channel name*/
+.actionIcon-2sw4Sl {
+    display: none;
+}
+
+/*Puts gif star back on the right side*/
+.imageAccessory-2yA7Kb {
+    left: initial;
+    right: 6px;
+}
